@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+       
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -10,6 +11,28 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+       
+        span {
+            font-size: 1.5em;
+            font-family: serif;
+            color: transparent;
+            text-align: center;
+            animation: effect 2s linear infinite;
+        }
+ 
+        @keyframes effect {
+            0% {
+                background: linear-gradient(#FF0000, #FF0000);
+                -webkit-background-clip: text;
+            }
+ 
+            100% {
+                background: linear-gradient(#3CE7D7, #000FFF);
+                -webkit-background-clip: text;
+            }
+        }
+    </style>
     </head>
     <body>
         
@@ -36,7 +59,7 @@
             <div class="text-center my-5">
                 <img class="img-fluid rounded-corners{border-radius: 30px;} mb-4" src="assets/profile.jpg" alt="..." / style="width:250px;height:250px;">
                 <h1 class="text-white fs-3 fw-bolder">Ruchik Mishra</h1>
-                <p class="text-white-50 mb-0">PhD student, University of Louisville</p>
+                <p class="text-white-50 mb-0">PhD candidate, University of Louisville</p>
 <!--
                 <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/ruchik-mishra-a3843a133/"><i class="fab fa-linkedin-in"></i></a>
@@ -54,9 +77,15 @@
         <section class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-15">
                         <h2>Introduction</h2>
-                        <p class="lead">Hi, I am a second year PhD student in the Department of Electrical and Computer Engineering at the University of Louisville, KY. My current research spans the areas of Affective Computing, Deep Learning and Robotics and their application in healthcare. It involves modeling engagement during a therapy session of children with Autism Spectrum Disorder (ASD). My prime focus is to leverage the deep learning algorithms to create an emotion feedback between a robot and a child in the context of autism therapy to facilitate personalized and adaptive robotic interventions.</p>
+                        <p class="lead">Hi, I am a third year PhD cadidate in the Department of Electrical and Computer Engineering at the University of Louisville, KY. My current research spans the areas of Affective Computing, Deep Learning and Robotics and their application in healthcare. It involves modeling engagement during a therapy session of children with Autism Spectrum Disorder (ASD). My prime focus is to leverage the deep learning algorithms to create an emotion feedback between a robot and a child in the context of autism therapy to facilitate personalized and adaptive robotic interventions.</p>
+                        <h4>Interests</h4>
+                        <p class="lead">I got introduced to deep learning during one of my courses during my PhD and it was quite intriguing for me. I wanted to examine how I can use it for healthcare applications to make better predictions. So far, I have used <strong> CNNs, LSTMs </strong> for different time-series data (mostly physiological signals like PPG, EDA etc.) to make predictions and forecast engagement in children with ASD. Currently, I am working with transformers based architectures and trying to explore <strong> vision transformers (ViT)</strong> to make multimodal analysis for engagement estimation.</p>
+                        
+                        <h4>Education</h4>
+                        <p class = "lead"><bold> PhD </bold> candidate, University of Louisville (January 2022 - present)</p>
+                        <p class = "lead">Bachelor of Engineering (Honors), Manufacturing Engineering, Birla Institute of Technology and Science (2015- 2019) </p>
 <!--                        <p class="mb-0">The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably egocentric of us to suggest that we're alone in the universe.</p>-->
                     </div>
                 </div>
@@ -71,18 +100,34 @@
 -->
     
         
+        
         <!-- Content section-->
+<!--
         <section class="py-5">
-            <div class="container my-5">
+            <div class="container my-0">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h2>Background</h2>
+                    <div class="col-lg-10">
+                        <h2>Education</h2>
                         <p class="lead"><li>PhD student, University of Louisville (January 2022-current)</li><li>Bachelor of Engineering (Honors), Manufacturing Engineering, Birla Institute of Technology and Science. 2015- 2019 </li></p>
-<!--                        <p class="mb-0">I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>-->
+                        <p class="mb-0">I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>
                     </div>
                 </div>
             </div>
         </section>
+-->
+        
+         <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-15">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>News</h2>
+                        <p class="lead"><li>Winner (Distiction) In Annual SuperCollider Conference for Kentucky NSF EPSCoR Research Poster Session, Louisville, KY, February 2, 2024 <span>(New)</span></li><li>Presented our paper on Social Impressions of the NAO robot and its impact on Physiology at ACII 2023 at MIT Media Labs</li> <li>Appeared on the Talking Robotics Podcast, 2023</li> <li>Presented 1 poster at ICRA 2023 in London</li></p>
+                                            </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Footer-->
 <!--
         <footer class="py-5 bg-dark">
@@ -103,4 +148,5 @@
         
         
     </body>
+    
 </html>
