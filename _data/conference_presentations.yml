@@ -1,0 +1,64 @@
+# Conference presentations shown on the Presentations page, newest first.
+#
+# To add one, copy a block and change it:
+#   title:    what you presented
+#   venue:    conference name
+#   location: city
+#   year:     year
+#   type:     Talk, Poster, or Paper presentation
+#   image:    photo saved in assets/img/presentations/ (any shape; it is cropped to fit)
+#   award:    optional, e.g. Mark of Distinction (delete the line if none)
+#   position: optional, which part of the photo to show in the thumbnail, e.g. 85% 45% (right side)
+
+- title: KneeMS for Juvenile Idiopathic Arthritis
+  venue: 2026 Pediatric Rheumatology Symposium (PRSYM)
+  location: Minneapolis, MN
+  year: 2026
+  type: Poster
+  image: prsym-2026.jpg
+
+- title: Real-Time Biomedical Data as a Shaper of Robot Behavior in Human–Robot Interaction
+  venue: Annual SuperCollider Conference, Kentucky NSF EPSCoR
+  location: Louisville, KY
+  year: 2024
+  type: Poster
+  image: epscor-2024.jpg
+  award: Mark of Distinction
+
+- title: Assessment of Child Physiological Measures of Listening Effort During Telepractice
+  venue: Kentucky Speech-Language-Hearing Association (KASHA)
+  location:
+  year: 2024
+  type: Poster
+  image: kasha-2024.jpg
+
+- title: Social Impressions of the NAO Robot and Its Impact on Physiology
+  venue: ACII Workshops and Demos (ACIIW), International Conference on Affective Computing and Intelligent Interaction, MIT Media Lab
+  location: Cambridge, MA
+  year: 2023
+  type: Paper presentation
+  image: acii-2023.jpg
+
+- title: Social Impressions of the NAO Robot and Applications in Robotic Intervention of Autism Spectrum Disorder
+  venue: Socially Acceptable Robots Workshop, IEEE International Conference on Robotics and Automation (ICRA)
+  location: London, UK
+  year: 2023
+  type: Poster
+  image: icra-2023.jpg
+
+- title: Towards Forecasting Engagement in Children with Autism Spectrum Disorder Using Social Robots and Deep Learning
+  venue: IEEE SoutheastCon
+  location: Orlando, FL
+  year: 2023
+  type: Paper presentation
+  image: southeastcon-2023.jpg
+  position: 85% 45%
+  award: Finalist, IEEE-HKN Best Student Paper Award
+
+- title: Severity Metric Development for Diagnosis of Autism Using Social Robots
+  venue: Research!Louisville, University of Louisville
+  location: Louisville, KY
+  year: 2022
+  type: Poster
+  image: research-louisville-2022.jpg
+  award: 1st Place, Doctoral Engineering Student Award

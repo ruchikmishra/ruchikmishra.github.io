@@ -1,0 +1,7 @@
+# Co-authors whose names should link to their pages on the publications list.
+# Key = last name in lowercase. Example:
+#
+# "popa":
+#   - firstname: ["Dan", "D.", "D. O."]
+#     url: https://example.edu/~popa
+{}

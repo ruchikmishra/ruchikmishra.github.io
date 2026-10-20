@@ -1,0 +1,55 @@
+# Venue badges (the "abbr" field in the .bib files).
+# color = badge background; text_color = badge text (text_color is supported by the local _layouts/bib.liquid override).
+# To change every badge at once, edit the two values in the first entry and copy them down.
+
+"JTEHM":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"EMBC":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"RA-L":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"arXiv":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"AJA":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"Technologies":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"CASE":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"ACIIW":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"SoutheastCon":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"ICRA-W":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"ICICT":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"ICCAR":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"ARSO":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"Abstract":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"JASA":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"Poster":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"
+"ACII":
+  color: "#efe6d2"
+  text_color: "#5c4a2e"

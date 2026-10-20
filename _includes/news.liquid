@@ -1,0 +1,63 @@
+{%- comment -%}
+  Local override of al-folio's news list (al_folio_core 1.0.15).
+  Change: when the about page sets announcements.scrollable, the list shows
+  announcements.visible items (default 4) and scrolls for the rest.
+{%- endcomment -%}
+<div class="news">
+  {% if site.news != blank %}
+    {% assign news_size = site.news | size %}
+    {% assign news_visible = page.announcements.visible | default: 4 %}
+    <div
+      class="table-responsive{% if include.limit and page.announcements.scrollable and news_size > news_visible %} news-scroll{% endif %}"
+      data-visible="{{ news_visible }}"
+    >
+      <table class="table table-sm table-borderless">
+        {% assign news = site.news | reverse %}
+        {% if include.limit and page.announcements.limit %}
+          {% assign news_limit = page.announcements.limit %}
+        {% else %}
+          {% assign news_limit = news_size %}
+        {% endif %}
+        {% for item in news limit: news_limit %}
+          <tr>
+            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <td>
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <style>
+      .news-scroll {
+        overflow-y: auto;
+      }
+    </style>
+    <script>
+      (function () {
+        var box = document.currentScript.parentNode.querySelector('.news-scroll');
+        if (!box) return;
+        var n = parseInt(box.getAttribute('data-visible'), 10) || 4;
+        function fit() {
+          var rows = box.querySelectorAll('tr');
+          if (rows.length <= n) {
+            box.style.maxHeight = '';
+            return;
+          }
+          var top = box.getBoundingClientRect().top;
+          var bottom = rows[n - 1].getBoundingClientRect().bottom;
+          box.style.maxHeight = Math.ceil(bottom - top + 2) + 'px';
+        }
+        fit();
+        window.addEventListener('load', fit);
+        window.addEventListener('resize', fit);
+      })();
+    </script>
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>

@@ -1,0 +1,7 @@
+# GitHub accounts and repositories to show on a repositories page (not enabled).
+github_users:
+  - ruchikmishra
+
+repo_description_lines_max: 2
+
+github_repos: []
